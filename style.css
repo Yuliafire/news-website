@@ -20,18 +20,13 @@
   height: 14.375rem;
   background: #adadad;
   position: relative;
-  /* padding-left: 150px;
-  padding-right: 150px; */
-  font-family: "Actor", serif;
 }
 
 .header__container {
   position: absolute;
   top: 2.5rem;
   z-index: 2;
-  /* margin-top: 40px; */
   max-width: 79%;
-  /* max-width: 1520px; */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -40,12 +35,10 @@
   padding: 10px 5px;
   gap: 50px;
   height: 5rem;
-  /* left: calc(50% - 1520px/2); */
   left: 50%;
   transform: translateX(-50%);
   background: #ffc600;
   border-radius: 52px;
-  font-family: "Actor", serif;
 }
 
 .header__container-logo,
@@ -61,20 +54,14 @@
 .header__list {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 30px;
-  margin: 0 auto;
 }
 
 .header__list-item {
   text-decoration: none;
-  font-family: Actor;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
@@ -126,12 +113,10 @@
   max-width: 120rem;
   width: 100%;
   height: 80px;
-  left: 0px;
-  bottom: 0px;
-
-  /* E7E7E6 */
+  left: 0;
+  bottom: 0;
   background: #e7e7e6;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 50px 50px 0 0;
 }
 
 .main {
@@ -140,13 +125,8 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  /* align-items: flex-start; */
-  padding: 0px 200px 150px;
-  /* padding-left: 150px;
-  padding-right: 150px; */
-
+  padding: 0 200px 150px;
   gap: 9.375rem;
-  /* height: 1803px; */
   height: auto;
   background: #e7e7e6;
 }
@@ -165,54 +145,17 @@
   gap: 12px;
 }
 
-h3,
-span {
-  /* Главная */
-
-  font-family: "Actor";
-  font-style: normal;
-  font-weight: 400;
+.main__heading-main,
+.main__heading-news,
+.main__heading-span {
   font-size: 32px;
   line-height: 100%;
-  /* identical to box height, or 32px */
   display: flex;
   align-items: center;
-
   color: #000000;
 }
 
-.main__news-pagination {
-  display: flex;
-  gap: 15px;
-  margin-top: -25px;
-}
-
-.main__news-arrow,
-.main__news-pages-page {
-  /* ic:round-arrow-back */
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 12.5714px 10.0571px;
-  gap: 12.57px;
-  width: 40px;
-  height: 44px;
-  background: #ffffff;
-  border-radius: 6.28571px;
-}
-
-.main__news-pages {
-  display: flex;
-  gap: 5px;
-}
-
-.main__news-pages-page--active {
-  background-color: #fdc70d;
-}
-
 .main__buttons {
-  /* padding-top: 132px; */
   display: flex;
   justify-content: space-between;
   max-width: 95rem;
@@ -230,29 +173,17 @@ span {
   justify-content: center;
   align-items: center;
   padding: 10px;
-
   background: white;
   border: 1px solid white;
   width: 108px;
   height: 44px;
-
   border-radius: 5px;
-  /* Теги */
-
   gap: 20px;
-
-  /* Новости */
-
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-
-  /* 000000 */
   color: #000000;
 }
 
@@ -268,9 +199,6 @@ span {
 }
 
 .main__buttons-right-btn {
-  /* label */
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -279,23 +207,13 @@ span {
   gap: 10px;
   width: 61px;
   height: 44px;
-  /* FFFFFF */
   background: #ffffff;
   border: 1px solid white;
   border-radius: 5px;
-
-  /* 2024 */
-
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  /* line-height: 24px; */
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-
-  /* 000000 */
   color: #000000;
 }
 
@@ -305,27 +223,18 @@ span {
 }
 
 .main__button-right-archive {
-  width: 130px;
+  width: 176px;
   height: 44px;
   border: 2px solid #000000;
   border-radius: 20px;
-
-  /* label */
-
   box-sizing: border-box;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 176px;
-  height: 44px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #000000;
-
-  border: 2px solid #000000;
-  border-radius: 20px;
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
@@ -335,7 +244,6 @@ span {
 .main__news {
   display: flex;
   flex-direction: column;
-  max-width: 120rem;
   max-width: 95rem;
   gap: 50px;
   margin-top: -20px;
@@ -359,8 +267,6 @@ span {
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* 000000 */
   color: #000000;
 }
 
@@ -386,17 +292,11 @@ span {
   display: flex;
   flex-direction: column;
   gap: 3px;
-
-  /* Скорость движения на Алтуфьевском шоссе выросла на 5% */
-
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 110%;
-  /* or 26px */
-
-  /* 000000 */
   color: #000000;
 }
 
@@ -406,14 +306,39 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 110%;
-  /* identical to box height, or 22px */
-
-  /* 000000 */
   color: #000000;
 }
 
 .main__news-grid-item-image {
   border-radius: 30px;
+}
+
+.main__news-pagination {
+  display: flex;
+  gap: 15px;
+  margin-top: -25px;
+}
+
+.main__news-arrow,
+.main__news-pages-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12.5714px 10.0571px;
+  gap: 12.57px;
+  width: 40px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 6.28571px;
+}
+
+.main__news-pages {
+  display: flex;
+  gap: 5px;
+}
+
+.main__news-pages-page--active {
+  background-color: #fdc70d;
 }
 
 .footer {
