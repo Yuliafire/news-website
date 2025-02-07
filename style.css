@@ -79,8 +79,6 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  /* Направления деятельности */
 }
 
 .header__burger {
@@ -143,7 +141,7 @@
   max-width: 1920px;
   margin: 0 auto;
   /* align-items: flex-start; */
-  padding: 0px 200px 219px;
+  padding: 0px 200px 150px;
   /* padding-left: 150px;
   padding-right: 150px; */
 
@@ -164,25 +162,53 @@
 
 .main__heading {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 h3,
 span {
   /* Главная */
 
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  /* identical to box height, or 32px */
+  display: flex;
+  align-items: center;
 
-font-family: 'Actor';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 100%;
-/* identical to box height, or 32px */
-display: flex;
-align-items: center;
+  color: #000000;
+}
 
-color: #000000;
+.main__news-pagination {
+  display: flex;
+  gap: 15px;
+  margin-top: -25px;
+}
 
+.main__news-arrow,
+.main__news-pages-page {
+  /* ic:round-arrow-back */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12.5714px 10.0571px;
+  gap: 12.57px;
+  width: 40px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 6.28571px;
+}
+
+.main__news-pages {
+  display: flex;
+  gap: 5px;
+}
+
+.main__news-pages-page--active {
+  background-color: #fdc70d;
 }
 
 .main__buttons {
@@ -313,6 +339,7 @@ color: #000000;
   max-width: 95rem;
   gap: 50px;
   margin-top: -20px;
+  align-items: center;
 }
 
 .main__news-grid {
@@ -328,7 +355,7 @@ color: #000000;
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
-
+  align-self: flex-start;
   display: flex;
   align-items: center;
   text-align: center;
