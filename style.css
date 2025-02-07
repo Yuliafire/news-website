@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Actor", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
@@ -15,6 +20,9 @@
   height: 14.375rem;
   background: #adadad;
   position: relative;
+  /* padding-left: 150px;
+  padding-right: 150px; */
+  font-family: "Actor", serif;
 }
 
 .header__container {
@@ -22,7 +30,7 @@
   top: 2.5rem;
   z-index: 2;
   /* margin-top: 40px; */
-  max-width: 80%;
+  max-width: 79%;
   /* max-width: 1520px; */
   width: 100%;
   margin: 0 auto;
@@ -37,6 +45,7 @@
   transform: translateX(-50%);
   background: #ffc600;
   border-radius: 52px;
+  font-family: "Actor", serif;
 }
 
 .header__container-logo,
@@ -45,7 +54,7 @@
   border-radius: 50%;
   border: 1px solid white;
   background-color: white;
-  width: 4.375rem; 
+  width: 4.375rem;
   height: 4.375rem;
 }
 
@@ -63,41 +72,55 @@
 
 .header__list-item {
   text-decoration: none;
+  font-family: Actor;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
   /* Направления деятельности */
 }
 
 .header__burger {
-    position: relative;
-    width: 4.375rem;
-    height: 4.375rem;
-    cursor: pointer;
+  position: relative;
+  width: 4.375rem;
+  height: 4.375rem;
+  cursor: pointer;
 }
 
 .header__burger-line {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 3px;
-    background-color: black;
-    transition: transform 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.3s ease;
 }
 
 .header__burger-line:nth-child(1) {
-    top: 23px;
+  top: 23px;
 }
 
 .header__burger-line:nth-child(2) {
-top: 50%;
-transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header__burger-line:nth-child(3) {
-   bottom: 23px;
+  bottom: 23px;
 }
 
-.header__left {
+.header__right {
   display: flex;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.header__search {
+  align-self: center;
 }
 
 .header__frame {
@@ -120,7 +143,10 @@ transform: translate(-50%, -50%);
   max-width: 1920px;
   margin: 0 auto;
   /* align-items: flex-start; */
-  padding: 0px 200px 150px;
+  padding: 0px 200px 219px;
+  /* padding-left: 150px;
+  padding-right: 150px; */
+
   gap: 9.375rem;
   /* height: 1803px; */
   height: auto;
@@ -133,13 +159,160 @@ transform: translate(-50%, -50%);
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+  gap: 100px;
+}
+
+.main__heading {
+  display: flex;
+  gap: 10px;
+}
+
+h3,
+span {
+  /* Главная */
+
+
+font-family: 'Actor';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 100%;
+/* identical to box height, or 32px */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+
+.main__buttons {
+  /* padding-top: 132px; */
+  display: flex;
+  justify-content: space-between;
+  max-width: 95rem;
+}
+
+.main__buttons-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.main__buttons-left-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  background: white;
+  border: 1px solid white;
+  width: 108px;
+  height: 44px;
+
+  border-radius: 5px;
+  /* Теги */
+
+  gap: 20px;
+
+  /* Новости */
+
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* 000000 */
+  color: #000000;
+}
+
+.main__buttons-left-btn--active {
+  background: #fdc70d;
+  border: 1px solid #fdc70d;
+}
+
+.main__buttons-right {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.main__buttons-right-btn {
+  /* label */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 61px;
+  height: 44px;
+  /* FFFFFF */
+  background: #ffffff;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  /* 2024 */
+
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  /* line-height: 24px; */
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* 000000 */
+  color: #000000;
+}
+
+.main__buttons-right-btn--active {
+  background: #fdc70d;
+  border: 1px solid #fdc70d;
+}
+
+.main__button-right-archive {
+  width: 130px;
+  height: 44px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+
+  /* label */
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 44px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000000;
+
+  border: 2px solid #000000;
+  border-radius: 20px;
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .main__news {
   display: flex;
   flex-direction: column;
   max-width: 120rem;
-  gap: 20px;
+  max-width: 95rem;
+  gap: 50px;
+  margin-top: -20px;
 }
 
 .main__news-grid {
@@ -150,6 +323,18 @@ transform: translate(-50%, -50%);
 }
 
 .main__news-title {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* 000000 */
+  color: #000000;
 }
 
 .main__news-grid-item {
@@ -168,17 +353,40 @@ transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   gap: 8px;
-
 }
 
 .main__news-grid-item-content-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  /* Скорость движения на Алтуфьевском шоссе выросла на 5% */
+
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  /* or 26px */
+
+  /* 000000 */
+  color: #000000;
+}
+
+.small {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  /* identical to box height, or 22px */
+
+  /* 000000 */
+  color: #000000;
 }
 
 .main__news-grid-item-image {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .footer {
