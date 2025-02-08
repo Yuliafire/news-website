@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Actor&display=swap"); */
 
 * {
   margin: 0;
@@ -9,121 +9,11 @@
   font-style: normal;
 }
 
-.header {
-  width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 14.375rem;
-  background: #adadad;
-  position: relative;
-}
-
-.header__container {
-  position: absolute;
-  top: 2.5rem;
-  z-index: 2;
-  max-width: 79%;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5px;
-  gap: 50px;
-  height: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ffc600;
-  border-radius: 52px;
-}
-
-.header__container-logo,
-.header__burger {
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: white;
-  width: 4.375rem;
-  height: 4.375rem;
-}
-
-.header__list {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.header__list-item {
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.header__burger {
-  position: relative;
-  width: 4.375rem;
-  height: 4.375rem;
-  cursor: pointer;
-}
-
-.header__burger-line {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  transition: transform 0.3s ease;
-}
-
-.header__burger-line:nth-child(1) {
-  top: 23px;
-}
-
-.header__burger-line:nth-child(2) {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__burger-line:nth-child(3) {
-  bottom: 23px;
-}
-
-.header__right {
-  display: flex;
-  justify-content: space-between;
-  gap: 19px;
-}
-
-.header__search {
-  align-self: center;
-}
-
-.header__frame {
-  position: absolute;
-  max-width: 120rem;
-  width: 100%;
-  height: 80px;
-  left: 0;
-  bottom: 0;
-  background: #e7e7e6;
-  border-radius: 50px 50px 0 0;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1920px;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 200px 150px;
   gap: 9.375rem;
@@ -205,8 +95,10 @@
   align-items: center;
   padding: 10px;
   gap: 10px;
-  width: 61px;
-  height: 44px;
+  /* width: 61px;
+  height: 44px; */
+  width: 3.8125rem;
+height: 2.75rem;
   background: #ffffff;
   border: 1px solid white;
   border-radius: 5px;
@@ -256,6 +148,29 @@
   grid-template-rows: repeat(4, 1fr);
   gap: 1.25rem;
 }
+
+@media (min-width: 769px)  and (max-width: 1250px) {
+  .main__news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (min-width: 381)  and (max-width: 768px) {
+  .main__news-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+
+@media (max-width: 380)  {
+  .main__news-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 
 .main__news-title {
   font-family: "Actor";
@@ -343,10 +258,94 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
   height: 22.75rem;
   background: #fdc70d;
+  padding-left: 200px;
+  padding-right: 200px;
 }
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer__container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__container-logo-circle {
+  border-radius: 50%;
+  /* logo */
+
+  width: 170.16px;
+  height: 167.57px;
+  /* FFFFFF */
+  background: #ffffff;
+}
+
+.footer__container-logo-socials {
+  display: flex;
+  gap: 5px;
+}
+
+.footer__container-logo-socials-tg,
+.footer__container-logo-socials-vk {
+    /* 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 48px;
+min-width: 40px;
+height: 48px;
+min-height: 40px;
+
+/* 000000 */
+background: #000000;
+border-radius: 8px;
+
+
+}
+
+
+.footer__container-info-blind {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+}
+
+
+
+.footer__container-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__container-info-name {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
