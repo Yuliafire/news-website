@@ -21,9 +21,9 @@
   height: auto;
   align-items: flex-start;
   /* padding: 0px 200px 150px; */
-  padding: 0px 12.5rem 9.375rem; 
+  padding: 0px 12.5rem 9.375rem;
   gap: 150px;
-  background: #E7E7E6;
+  background: #e7e7e6;
 }
 
 .main__container {
@@ -70,7 +70,7 @@
   padding: 10px;
   background: white;
   border: 1px solid white;
-  width: 6.75rem; 
+  width: 6.75rem;
   height: 2.75rem;
   border-radius: 5px;
   gap: 20px;
@@ -163,9 +163,8 @@
 }
 
 @media (min-width: 901px) and (max-width: 1600px) {
-
   .main {
-    max-width: 100rem;/* 768px / 16 = 48rem */
+    max-width: 100rem; /* 768px / 16 = 48rem */
     width: 100%;
     margin: 0 auto;
     padding-left: 3.125rem; /* 50px / 16 = 3.125rem */
@@ -173,7 +172,7 @@
   }
 
   .main__container {
-    max-width: 100rem;;
+    max-width: 100rem;
     width: 100%;
     margin: 0 auto;
   }
@@ -182,7 +181,6 @@
     /* width: 100%; */
     max-width: 100%;
   }
-
 
   .main__news-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -191,7 +189,6 @@
 }
 
 @media (min-width: 381px) and (max-width: 900px) {
-
   .main {
     max-width: 56.25rem;
     width: 100%;
@@ -215,16 +212,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
-
-  .main__buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* justify-content: flex-start; */
-    align-items: flex-start;
-}
-
 }
 
 @media (max-width: 380) {
@@ -232,7 +219,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
 }
 
 .main__news-title {
@@ -326,4 +312,24 @@
 
 .main__news-pages-page--active {
   background-color: #fdc70d;
+}
+
+@media (min-width: 640px) and (max-width: 1000px) {
+  .main__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 639px) {
+  .main__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+  }
 }
