@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Actor&display=swap"); */
-
 @import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
 
 * {
@@ -253,6 +251,7 @@
   height: 14.375rem;
   background: #ffffff;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .main__news-grid-item-content {
@@ -303,6 +302,7 @@
   height: 44px;
   background: #ffffff;
   border-radius: 6.28571px;
+  cursor: pointer;
 }
 
 .main__news-pages {
