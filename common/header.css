@@ -41,6 +41,10 @@
   border-radius: 52px;
 }
 
+html {
+  scroll-behavior: smooth; /* CSS for smooth scrolling */
+}
+
 .header__logo,
 .header__burger {
   /* display: inline-block; */
