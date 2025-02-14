@@ -156,6 +156,7 @@ textarea {
     padding-left: 3.125rem; /* 50px / 16 = 3.125rem */
     padding-right: 3.125rem; /* 50px / 16 = 3.125rem */
     margin: 0 auto;
+    height: auto;
   }
 
   .customer-form__container {
@@ -163,6 +164,7 @@ textarea {
     max-width: 56.25rem;
     /* justify-content: center; */
     align-items: center;
+    height: auto;
   }
 
   form {
@@ -175,6 +177,7 @@ textarea {
     height: 785px;
     background: #ffffff;
     border-radius: 10px;
+    height: auto;
   }
 }
 
@@ -201,6 +204,7 @@ textarea {
     height: 696px;
     background: #ffffff;
     border-radius: 10px;
+    height: auto;
   }
 
   .form__submit {
